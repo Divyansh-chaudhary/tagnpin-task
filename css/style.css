@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* header */
+.header {
+    text-align: center;
+    padding: 1rem 0;
+}
+.header img {
+    width: 100px;
+}
+.header h1 {
+    font-size: 1.4rem;
+    padding: 10px;
+}
+
+/* form */
+form {
+    text-align: center;
+    padding: 2rem;
+}
+form .field-container {
+    margin: 1rem 0;
+}
+form .field-container .title {
+    font-size: 1.1rem;
+    margin: 0 0 0.5rem 0;
+}
+form .field-container ul.fields {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+form .field-container ul.fields li {
+    width: 100%;
+    max-width: 120px;
+    min-width: 60px;
+    position: relative;
+    margin: 0 2px;
+}
+form .field-container ul.fields li:first-child {
+    text-align: right;
+}
+form .field-container ul.fields li:last-child {
+    text-align: left;
+}
+form .field-container ul.fields li span{
+    display: inline-block;
+    font-size: 0.8rem;
+    white-space: nowrap;
+}
+form .field-container ul.fields li span:last-child {
+    height: 40px;
+    width: 100%;
+    background-color: #eee;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+form .field-container ul.fields li:first-child::before {
+    content: "";
+    position: absolute;
+    top: 1.15rem;
+    left: 0;
+    border: 10px solid transparent;
+    border-top-color: white;
+    border-left-color: white;
+}
+form .field-container ul.fields li:first-child::after {
+    content: "";
+    position: absolute;
+    bottom: 4px;
+    left: 0;
+    border: 10px solid transparent;
+    border-bottom-color: white;
+    border-left-color: white;
+}
+form .field-container ul.fields li:last-child::before {
+    content: "";
+    position: absolute;
+    top: 1.15rem;
+    right: 0;
+    border: 10px solid transparent;
+    border-top-color: white;
+    border-right-color: white;
+}
+form .field-container ul.fields li:last-child::after {
+    content: "";
+    position: absolute;
+    bottom: 4px;
+    right: 0;
+    border: 10px solid transparent;
+    border-bottom-color: white;
+    border-right-color: white;
+}
+form .submit-btn {
+    background-color:teal;
+    padding: 0.4rem 1.2rem;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    color: #fff;
+    letter-spacing: 1px;
+    text-transform:uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+ul.fields[data-item="responsiveness"] li[data-value="1"] span:last-child {
+    background-color: violet !important;
+}
+ul.fields[data-item="advising"] li[data-value="1"] span:last-child {
+    background-color:wheat !important;
+}
+ul.fields[data-item="trustworthiness"] li[data-value="1"] span:last-child {
+    background-color:yellow !important;
+}
+ul.fields[data-item="service"] li[data-value="1"] span:last-child {
+    background-color:yellowgreen !important;
+}
